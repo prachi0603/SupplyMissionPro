@@ -83,15 +83,15 @@ function draw() {
 function keyPressed(){
 if(keyDown === LEFT_ARROW){
 	helicopterSprite.x=helicopterSprite.x-20
-	Matter.Body.translate(packageBody,{x:20,y:0})
+	Matter.Body.translate(packageBody,{x:-20,y:0})
 }
 
-if(keyDown === RIGHT_ARROW){
+else if(keyDown === RIGHT_ARROW){
 	helicopterSprite.x=helicopterSprite.x+20
 	Matter.Body.translate(packageBody,{x:20,y:0})
 }
 
-if(keyDown === DOWN_ARROW){
+else if(keyDown === DOWN_ARROW){
 Matter.Body.setStatic(packageBody,false)
 }
 }
