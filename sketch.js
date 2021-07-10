@@ -63,22 +63,6 @@ function setup() {
 
 
 	Engine.run(engine);
-  
-}
-
-
-function draw() {
-	Engine.update(engine);
-  rectMode(CENTER);
-  background(0);
- 
-  packageSprite.x= packageBody.position.x 
-  packageSprite.y= packageBody.position.y 
-
-  
-  drawSprites();
-  
-  
  
 }
 function keyPressed(){
